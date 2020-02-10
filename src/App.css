@@ -1,38 +1,77 @@
-.App {
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  font-family: monospace;
+  font-size: larger;
+}
+
+h1 {
+  color: aliceblue;
+  margin: 30px 10px 5px 10px;
+}
+
+.todo-list {
+  display: flex;
+  flex-flow: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.todo {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background: beige;
+  box-shadow: 1px 1px 1px whitesmoke;
+  border-radius: 3px;
+  border: solid 2px fuchsia;
+  width: 50%;
+  height: 30px;
+  margin: 5px;
+}
+
+.complete-button {
+  font-family: monospace;
+  background-color: mediumseagreen;
   color: white;
+  font-weight: bold;
+  border: 0px;
+  margin: 0px 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.undo-button {
+  font-family: monospace;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  margin: 0px 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.remove-button {
+  color: red;
+  font-weight: bold;
+  border: 0px;
+  margin: 0px 2px;
+}
+
+form {
+  width: 50%;
+  margin: 10px;
+}
+
+.input {
+  width: 100%;
+  height: 30px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
 }
